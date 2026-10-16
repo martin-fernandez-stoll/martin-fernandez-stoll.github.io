@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | Martin Fernandez-Stoll</title>
+<meta name="description" content="About Martin Fernandez-Stoll, aerospace engineering student at UCF.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;550;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Martin Fernandez-Stoll</a>
+    <nav class="nav" aria-label="Main"><a href="index.html">Projects</a><a href="about.html" aria-current="page">About</a><a href="assets/Martin_Fernandez-Stoll_Resume.pdf">Résumé</a><a href="https://www.linkedin.com/in/martinfernandezstoll" rel="noopener">LinkedIn</a><a href="mailto:martinfernandezstoll@gmail.com">Email</a></nav>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="about-hero">
+  <div>
+    <p class="eyebrow">About</p>
+    <h1>Hi, I'm Martin.</h1>
+    <p class="lede" style="margin-top:1rem">I'm an aerospace engineering student at UCF who likes being the person who puts the hardware together. I design enclosures and mounts, integrate boards and harnesses, and write down how it all fits so the next team can rebuild it.</p>
+    <p class="lede">I'm also the Knights Satellite Club's treasurer. The club has flown balloon payloads and tethered tests, but never a satellite in orbit. Between leading KLEO's integration and handling its money, launch talks and legal setup, I've been helping build the program that will get it there.</p>
+  </div>
+  <aside class="glance" aria-label="At a glance">
+    <div class="glance-row"><span class="k">Studying</span><span class="v">B.S. Aerospace Engineering<br>University of Central Florida</span></div>
+    <div class="glance-row"><span class="k">Graduating</span><span class="v">Expected Spring 2028</span></div>
+    <div class="glance-row"><span class="k">Focus</span><span class="v">Satellite integration · mechanical design</span></div>
+    <div class="glance-row"><span class="k">Looking for</span><span class="v">Satellite integration internships, with mechanical design a close second. Open to relocating within the U.S. and to international roles.</span></div>
+    <div class="glance-actions">
+      <a class="btn primary" href="mailto:martinfernandezstoll@gmail.com">Email me</a>
+      <a class="btn" href="assets/Martin_Fernandez-Stoll_Resume.pdf">Résumé (PDF)</a>
+      <a class="btn" href="https://www.linkedin.com/in/martinfernandezstoll" rel="noopener">LinkedIn</a>
+    </div>
+  </aside>
+</section>
+
+<section>
+  <h2>Roles at Knights Satellite Club</h2>
+  <ol class="timeline">
+    <li><span class="when">Aug 2026 – present</span><div><h3>KLEO Integration Lead</h3><p>Leading integration on a PROVES CubeSat engineering unit and writing the guide that records what we learn from it. <a href="kleo-1.html">Project →</a></p></div></li>
+    <li><span class="when">Jun 2026 – present</span><div><h3>KAOS-2 Mechanical Team Lead</h3><p>Designed and built a screw-free 4U balloon enclosure; replacement now nearly done in CAD. <a href="kaos-2.html">Project →</a></p></div></li>
+    <li><span class="when">May 2026 – present</span><div><h3>Treasurer</h3><p>Funding, launch-provider talks and incorporation: the groundwork for the club's first satellite in orbit. <a href="#treasurer">Details below ↓</a></p></div></li>
+    <li><span class="when">Aug 2025 – Mar 2026</span><div><h3>TSat-2A Mechanical Team Lead</h3><p>Led a five-person team from enclosure design through a 450-ft tethered flight. <a href="tsat-2a.html">Project →</a></p></div></li>
+  </ol>
+</section>
+
+<section id="treasurer">
+  <h2>Treasurer: building the program around the satellite</h2>
+  <p class="prose">A club that flies balloons can run on a shared spreadsheet and a few emails. A club that launches a satellite needs reliable funding records, a launch provider, and a legal entity that can sign contracts. When I took over the books, the finances were spread across old spreadsheets with missing transactions and no clear balance for each funding source. Since then I've rebuilt that system, kept funding coming in, opened launch talks for KLEO, and helped set up the corporation those talks require.</p>
+  <div class="stats">
+    <div class="stat"><span class="num">~$4,000</span><span class="lbl">new funding helped secure</span></div>
+    <div class="stat"><span class="num">~$4,500</span><span class="lbl">travel grants managed</span></div>
+    <div class="stat"><span class="num">$3,200</span><span class="lbl">active Florida Space Grant Consortium project grants</span></div>
+    <div class="stat"><span class="num">5</span><span class="lbl">engineering projects tracked in one budget, plus events and PR</span></div>
+  </div>
+
+  <div class="feature">
+    <div class="feature-text">
+      <h3>A purchasing and budget system the whole club uses</h3>
+      <p>I audited the old records and moved the budget from scattered Excel workbooks to Google Sheets with two AppSheet apps. Project leads submit bill-of-materials requests in one app. I record each purchase against the funding source that pays for it in the other. The final price and status flow back to the team's BOM, and balances update automatically.</p>
+      <p>Before rollout I tested the full request-to-purchase loop, including confirming that balances returned to their original values after a test purchase was removed. I also wrote a user guide and handover notes so the next treasurer can run it without me.</p>
+    </div>
+    <ol class="flow" aria-label="How a purchase moves through the system">
+      <li><span class="step">1</span>Lead submits a BOM request</li>
+      <li><span class="step">2</span>Treasurer reviews the weekly queue</li>
+      <li><span class="step">3</span>Purchase recorded against a funding source</li>
+      <li><span class="step">4</span>Price and status return to the team BOM; balances update</li>
+    </ol>
+  </div>
+
+  <div class="feature" id="launch">
+    <div class="feature-text">
+      <h3>Finding KLEO a ride to orbit</h3>
+      <p>Launch slots for a single university CubeSat are scarce and expensive, and most rideshare providers aren't set up to deal with a student club. After SmallSat 2026 I started reaching out to launch providers directly. I'm now in active talks with four of them.</p>
+      <p>That means working through each provider's integration requirements, schedule and cost, and turning their answers into what the KLEO team needs to have ready. Those talks also exposed a problem: as a student organization, the club couldn't sign the NDAs and contracts involved. That's what led us to incorporate.</p>
+    </div>
+    <dl class="side-facts">
+      <div><dt>Launch providers in talks</dt><dd>4</dd></div>
+      <div><dt>Started</dt><dd>After SmallSat 2026</dd></div>
+      <div><dt>Status</dt><dd>Ongoing; no launch agreement yet</dd></div>
+    </dl>
+  </div>
+
+  <div class="feature-grid">
+    <article class="mini">
+      <h3>Incorporation</h3>
+      <p>I helped incorporate Knights Satellite Club Inc., a Florida not-for-profit that lets the club sign the external agreements KLEO needs. I prepared and filed documents, coordinated the founding directors, obtained the EIN and completed the tax forms. I serve as a founding director and the corporation's Treasurer, and I'm authorized to handle its routine NDAs.</p>
+    </article>
+    <article class="mini">
+      <h3>Industry partners</h3>
+      <p>I secured an <strong>Onshape Enterprise</strong> account for the club's CAD work, plus <strong>FreeFlyer</strong> licenses, training support and a guest speaker. I'm also in talks with an electronics company about a partnership and facility tours, and I represented KSC at SmallSat 2026 in Salt Lake City.</p>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2>Tools, by where I've used them</h2>
+  <div class="tool-grid">
+    <div class="tool"><span class="tname">Onshape</span><span class="tuse">TSat-2A enclosure and configuration control; KAOS-2 redesign. Secured the club’s Enterprise account.</span></div>
+    <div class="tool"><span class="tname">Laser cutting</span><span class="tuse">KAOS-2 plywood enclosure</span></div>
+    <div class="tool"><span class="tname">3D printing (PETG)</span><span class="tuse">TSat-2A housing</span></div>
+    <div class="tool"><span class="tname">Google Sheets + AppSheet</span><span class="tuse">KSC purchasing and budget system</span></div>
+    <div class="tool"><span class="tname">SOLIDWORKS + SOLIDWORKS Simulation</span><span class="tuse">CAD Design Professional certification; finite-element (FEA) stress analysis</span></div>
+    <div class="tool"><span class="tname">MATLAB</span><span class="tuse">MATLAB Onramp</span></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div>
+    <h2 style="margin:0 0 .4rem">Let's talk</h2>
+    <p style="margin:0">I'm looking for satellite integration and mechanical design internships. The quickest way to reach me is email.</p>
+  </div>
+  <div class="glance-actions">
+    <a class="btn primary" href="mailto:martinfernandezstoll@gmail.com">martinfernandezstoll@gmail.com</a>
+    <a class="btn" href="assets/Martin_Fernandez-Stoll_Resume.pdf">Résumé (PDF)</a>
+    <a class="btn" href="https://www.linkedin.com/in/martinfernandezstoll" rel="noopener">LinkedIn</a>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Martin Fernandez-Stoll · Aerospace Engineering, University of Central Florida</span>
+    <span><a href="mailto:martinfernandezstoll@gmail.com">martinfernandezstoll@gmail.com</a> · <a href="https://www.linkedin.com/in/martinfernandezstoll" rel="noopener">LinkedIn</a> · <a href="assets/Martin_Fernandez-Stoll_Resume.pdf">Résumé</a></span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KLEO-1 | Martin Fernandez-Stoll</title>
+<meta name="description" content="Integration and hardware documentation for a PROVES CubeSat engineering unit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;550;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Martin Fernandez-Stoll</a>
+    <nav class="nav" aria-label="Main"><a href="index.html">Projects</a><a href="about.html">About</a><a href="assets/Martin_Fernandez-Stoll_Resume.pdf">Résumé</a><a href="https://www.linkedin.com/in/martinfernandezstoll" rel="noopener">LinkedIn</a><a href="mailto:martinfernandezstoll@gmail.com">Email</a></nav>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="project-head">
+  <p class="eyebrow">Project 03 · Knights Satellite Club</p>
+  <h1>KLEO-1</h1>
+  <p class="lede" style="margin-top:1rem">Taking apart and documenting a PROVES CubeSat engineering unit, so our club learns flight hardware well enough to build its own.</p>
+  <dl class="facts"><div><dt>Role</dt><dd>Integration Lead</dd></div><div><dt>Dates</dt><dd>Aug 2026 – present</dd></div><div><dt>Hardware</dt><dd>PROVES Kit engineering unit</dd></div><div><dt>Goal</dt><dd>Learn the hardware to build our own</dd></div></dl>
+  <ul class="toc">
+    <li><a href="#why">Why this project</a></li><li><a href="#work">What I did</a></li>
+    <li><a href="#guide">Documentation guide</a></li><li><a href="#payload">Making room for a payload</a></li>
+    <li><a href="#next">Next steps</a></li><li><a href="#lesson">Lesson</a></li>
+  </ul>
+</section>
+
+<div class="grid-2"><figure><img src="assets/img/kleo-overview.jpg" alt="Assembled CubeSat engineering unit with solar panels and tape antennas" class="tall" loading="lazy"><figcaption>The engineering unit, assembled.</figcaption></figure><figure><img src="assets/img/kleo-wiring.jpg" alt="Open CubeSat frame showing internal wiring and the battery assembly" class="tall" loading="lazy"><figcaption>Inside the frame: wiring and battery assembly.</figcaption></figure></div>
+
+<div class="prose">
+<h2 id="why">Why this project</h2>
+<p>KLEO is the Knights Satellite Club's orbital CubeSat, built on the PROVES kit. The club has flown balloon payloads and tethered tests, but no satellite has made it to orbit yet. Flying KLEO is one goal. The bigger one is to learn as much as we can from proven flight hardware, so the club can eventually design and build its own satellites.</p>
+<p>As Integration Lead, my job is to understand how everything in the unit fits and connects, and to make sure that knowledge stays with the team rather than with one person.</p>
+
+<h2 id="work">What I did</h2>
+<ul class="clean">
+  <li>Disassembled the engineering unit down to its structural panels and flight boards.</li>
+  <li>Guided integration and structures members through disassembly and reassembly, so they learned the component placement, board interfaces and wiring firsthand.</li>
+  <li>Recorded what we found along the way: orientation, board and connector labels, open pins, measurements, and issues.</li>
+  <li>Reorganized the internal cables along their required routes, without changing any electrical connections.</li>
+</ul>
+<p>The boards and flight software come from PROVES and the club's electrical and software members. My part is the integration and the documentation.</p>
+</div>
+
+<h2 id="guide">Documentation guide</h2>
+<div class="grid-2">
+  <figure><img src="assets/img/kleo-guide-spacing.jpg" alt="Guide page titled Board spacing and brackets, with a measurement table and photos" class="contain" style="aspect-ratio:auto" loading="lazy"><figcaption>A page from the guide: board spacing and bracket measurements.</figcaption></figure>
+  <div class="prose">
+    <p>I write and maintain the team's documentation guide for the unit. It's less a step-by-step manual and more a running record of what we learn each time the hardware is open: how the boards are oriented, what each connector does, which pins are still free, measured spacing, and the issues we run into, such as labels that didn't match our first notes.</p>
+    <p>Members already use it to find open pins and plan space for a payload. It grows as we learn more, and the assembly sequence is the next section to add.</p>
+    <ul class="chips" aria-label="Guide sections">
+      <li>Side orientation</li><li>Top and bottom references</li><li>Board spacing and brackets</li>
+      <li>Flight-board overview</li><li>Open connections</li><li>Connector details</li>
+    </ul>
+  </div>
+</div>
+
+<div class="prose">
+<h2 id="payload">Making room for a payload</h2>
+<p>One concrete result of that work: KLEO will carry a payload board that has to fit inside the existing layout. Our team moved the bracket mounts down one level, giving <strong>29 mm of total spacing between the flight and battery boards</strong>, and I reorganized the cables to keep that space clear.</p>
+</div>
+
+<div class="grid-2"><figure><img src="assets/img/kleo-brackets.jpg" alt="Side of the CubeSat frame showing two metal brackets and mounting screws" class="wide" loading="lazy"><figcaption>Board brackets and their mounting screws.</figcaption></figure><figure><img src="assets/img/kleo-brackets-green.jpg" alt="Opposite side of the frame showing brackets and wiring" class="wide" loading="lazy"><figcaption>Brackets and wiring from the opposite side.</figcaption></figure></div>
+
+<div class="prose">
+<h2 id="next">Next steps</h2>
+<p>We plan to make one new bracket and fit it between the existing ones, or possibly design a new bracket system, and then run a clearance test with the payload. None of these parts have been made yet. Meanwhile, the guide keeps growing as we learn the hardware.</p>
+
+<h2 id="lesson">Lesson</h2>
+<div class="callout"><p>Documentation is essential to every project. Writing things down while the hardware is open means the next person picks up where you left off instead of starting from scratch, and that's how a club goes from flying a kit to building its own.</p></div>
+<p class="credits">Photos and CAD: Knights Satellite Club team, used with permission.</p>
+</div>
+
+<nav class="next-prev"><a href="kaos-2.html">← KAOS-2</a><a href="about.html">About me →</a></nav>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Martin Fernandez-Stoll · Aerospace Engineering, University of Central Florida</span>
+    <span><a href="mailto:martinfernandezstoll@gmail.com">martinfernandezstoll@gmail.com</a> · <a href="https://www.linkedin.com/in/martinfernandezstoll" rel="noopener">LinkedIn</a> · <a href="assets/Martin_Fernandez-Stoll_Resume.pdf">Résumé</a></span>
+  </div>
+</footer>
+</body>
+</html>

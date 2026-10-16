@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TSat-2A | Martin Fernandez-Stoll</title>
+<meta name="description" content="Mechanical development and flight-test lessons from the TSat-2A tethered satellite.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;550;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Martin Fernandez-Stoll</a>
+    <nav class="nav" aria-label="Main"><a href="index.html">Projects</a><a href="about.html">About</a><a href="assets/Martin_Fernandez-Stoll_Resume.pdf">Résumé</a><a href="https://www.linkedin.com/in/martinfernandezstoll" rel="noopener">LinkedIn</a><a href="mailto:martinfernandezstoll@gmail.com">Email</a></nav>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="project-head">
+  <p class="eyebrow">Project 01 · Knights Satellite Club</p>
+  <h1>TSat-2A</h1>
+  <p class="lede" style="margin-top:1rem">Mechanical development of a 2U tethered-satellite demonstrator, and what its 450-ft flight showed about the parachute release.</p>
+  <dl class="facts"><div><dt>Role</dt><dd>Mechanical Team Lead</dd></div><div><dt>Dates</dt><dd>Aug 2025 – Mar 2026</dd></div><div><dt>Team</dt><dd>5-member mechanical team</dd></div><div><dt>Status</dt><dd>Flown Mar 28, 2026</dd></div></dl>
+  <ul class="toc">
+    <li><a href="#role">My role</a></li><li><a href="#decision">Release mechanism</a></li>
+    <li><a href="#testing">Testing</a></li><li><a href="#flight">Flight and failure</a></li><li><a href="#lesson">Lesson</a></li>
+  </ul>
+</section>
+
+<figure class="figure"><img src="assets/img/tsat-cad-open.jpg" alt="TSat-2A enclosure CAD with the side panel open, showing internal mounting" loading="lazy"><figcaption>TSat-2A enclosure CAD.</figcaption></figure>
+
+<div class="prose">
+<h2 id="role">My role</h2>
+<p>I led a five-member mechanical team on TSat-2A. I designed the enclosure walls, the servo mounting board the release line ties into, and the mechanical PCB mounting. I also carried out the integration and assembly of every part. I supervised the camera mounts, the panel and top-panel system, and the deployment-line tensioning.</p>
+<p>Alongside the hardware, I kept the mechanical requirements and the mass, volume and component budgets, and maintained CAD configuration control in Onshape.</p>
+</div>
+
+<div class="grid-2"><figure><img src="assets/img/tsat-cad-closed.jpg" alt="Closed TSat-2A enclosure CAD in black and yellow" class="contain" loading="lazy"><figcaption>Closed enclosure CAD.</figcaption></figure><figure><img src="assets/img/tsat-assembly.jpg" alt="TSat-2A hardware during assembly with the top panel lifted" class="wide" loading="lazy"><figcaption>Integration: the servo and top panel lifted above the enclosure during assembly.</figcaption></figure></div>
+
+<div class="prose">
+<h2 id="decision">Choosing the parachute release</h2>
+<p>The payload had to hold its parachute securely on the way up and then release it on command. We chose a servo-driven cutter that cuts a fishing line holding the parachute compartment closed.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Option</th><th>Outcome</th></tr></thead>
+<tbody>
+<tr><td>Servo-driven fishing-line cutter</td><td><strong>Selected</strong> for low cost, materials we already had, lower weight, our schedule, and easier testing.</td></tr>
+<tr><td>Burnwire release</td><td>Considered, not pursued.</td></tr>
+<tr><td>Servo latch / hinge</td><td>Considered, not pursued.</td></tr>
+</tbody></table></div>
+<p>The housing was 3D-printed in PETG as two repeatable sections. The PCBs sat on heated inserts and standoffs so they could be removed and repositioned during integration.</p>
+
+<h2 id="testing">Integration and testing</h2>
+<p>I was responsible for checking that the line cut cleanly, that it held at the right tension so it wouldn't release early, and that the parachute came out correctly. Before flight, the team ran:</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Test</th><th>What we learned</th></tr></thead>
+<tbody>
+<tr><td>Four-point retention test</td><td>The connection held beyond the range of our force gauge.</td></tr>
+<tr><td>Dummy-housing drops from about 50 ft</td><td>The parachute extracted. This was a limited-height check, not the full flight setup.</td></tr>
+<tr><td>20-minute integrated electronics and servo test</td><td>No data corruption, but the line did not cut.</td></tr>
+<tr><td>Integrated PCB-in-housing dry run</td><td>Checked physical fit and communication with everything installed.</td></tr>
+</tbody></table></div>
+<p>A servo-panel floor cracked before launch, so we reinforced the bolt holes with epoxy and replaced the servo panel.</p>
+</div>
+
+<h2 id="flight">Flight and failure</h2>
+<div class="grid-2">
+  <figure class="video-wrap"><video controls muted playsinline preload="none" poster="assets/video/tsat-2a-flight-poster.jpg" width="480" height="852"><source src="assets/video/tsat-2a-flight.mp4" type="video/mp4"></video><figcaption>Flight video (muted): ascent under the balloon, release, and the payload falling without a full parachute.</figcaption></figure>
+  <div class="prose">
+    <p>TSat-2A flew on March 28, 2026, reaching about 450 ft on its tether. The first cut command was acknowledged but didn't cut the line. Separation happened later, but <strong>the parachute did not deploy</strong>.</p>
+    <p>We reviewed the flight video and worked through the possible failure modes. Part of the parachute came out while the rest stayed trapped, which pointed to the servo compartment. The cause was the parachute catching on a piece of 3D-printing support material left in the part.</p>
+    <p>The housing was badly damaged, but the onboard images and altitude data were recovered from the SD card. There was no second launch and no redesign.</p>
+  </div>
+</div>
+
+<div class="grid-2"><figure><img src="assets/img/tsat-altitude.jpg" alt="Altitude versus time graph in meters and feet" class="contain" loading="lazy"><figcaption>Altitude log from the flight. The available log tops out at 439.5 ft; we observed about 450 ft.</figcaption></figure><figure><img src="assets/img/tsat-onboard.jpg" alt="Aerial view of the UCF campus from the payload camera" class="wide" loading="lazy"><figcaption>Image captured by the onboard camera during the flight.</figcaption></figure></div>
+
+<div class="grid-2"><figure><img src="assets/img/tsat-recovery.jpg" alt="Damaged payload and tangled parachute on the grass after landing" class="tall" loading="lazy"><figcaption>The payload and parachute where they landed.</figcaption></figure><figure><img src="assets/img/tsat-recovery-table.jpg" alt="Team inspecting the recovered payload and parachute on a table" class="tall" loading="lazy"><figcaption>Post-flight inspection of the recovered hardware.</figcaption></figure></div>
+
+<div class="prose">
+<h2 id="lesson">Lesson</h2>
+<div class="callout"><p>Final-assembly checks have to cover the whole packed deployment path, including leftover print supports and anything the parachute could catch on, not just whether the mechanism actuates.</p></div>
+<p class="credits">Photos and CAD: Knights Satellite Club team, used with permission.</p>
+</div>
+
+<nav class="next-prev"><a href="index.html">← All projects</a><a href="kaos-2.html">Next: KAOS-2 →</a></nav>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Martin Fernandez-Stoll · Aerospace Engineering, University of Central Florida</span>
+    <span><a href="mailto:martinfernandezstoll@gmail.com">martinfernandezstoll@gmail.com</a> · <a href="https://www.linkedin.com/in/martinfernandezstoll" rel="noopener">LinkedIn</a> · <a href="assets/Martin_Fernandez-Stoll_Resume.pdf">Résumé</a></span>
+  </div>
+</footer>
+</body>
+</html>

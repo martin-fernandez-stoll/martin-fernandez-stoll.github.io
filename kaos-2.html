@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KAOS-2 | Martin Fernandez-Stoll</title>
+<meta name="description" content="Design, build and redesign of the KAOS-2 balloon-mission enclosure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;550;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Martin Fernandez-Stoll</a>
+    <nav class="nav" aria-label="Main"><a href="index.html">Projects</a><a href="about.html">About</a><a href="assets/Martin_Fernandez-Stoll_Resume.pdf">Résumé</a><a href="https://www.linkedin.com/in/martinfernandezstoll" rel="noopener">LinkedIn</a><a href="mailto:martinfernandezstoll@gmail.com">Email</a></nav>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="project-head">
+  <p class="eyebrow">Project 02 · Knights Satellite Club</p>
+  <h1>KAOS-2</h1>
+  <p class="lede" style="margin-top:1rem">Designing, building and now reworking a 4U CubeSat-format enclosure for a high-altitude balloon mission.</p>
+  <dl class="facts"><div><dt>Role</dt><dd>Mechanical Team Lead</dd></div><div><dt>Dates</dt><dd>Jun 2026 – present</dd></div><div><dt>Format</dt><dd>4U, balloon-borne</dd></div><div><dt>Status</dt><dd>Original built · redesign in CAD</dd></div></dl>
+  <ul class="toc">
+    <li><a href="#role">My role</a></li><li><a href="#design">Design choices</a></li>
+    <li><a href="#build">Build</a></li><li><a href="#redesign">Review and redesign</a></li><li><a href="#status">Status</a></li>
+  </ul>
+</section>
+
+<figure class="figure"><img src="assets/img/kaos-built.jpg" alt="The built KAOS-2 enclosure: interlocking wooden panels with a speaker on one face and a printed vent on another" loading="lazy"><figcaption>The original KAOS-2 enclosure as built.</figcaption></figure>
+
+<div class="prose">
+<h2 id="role">My role</h2>
+<p>I lead the KAOS-2 mechanical team. I designed the enclosure's interlocking walls, the top and bottom panels, the speaker housing and attachment, the vent features, the mounts for the APRS radio and boards, and the bottom antenna housing. I assembled the enclosure and supervised the insulation installation.</p>
+<p>The enclosure holds three PCBs, two cameras, a GPS receiver and custom antenna hardware. Other team members handle the electronics and radio design and testing.</p>
+
+<h2 id="design">Design choices</h2>
+<p>The previous mission, KAOS-1, reported RF interference. That drove two choices in the KAOS-2 enclosure:</p>
+<ul class="clean">
+  <li><strong>Screw-free construction.</strong> The walls use a wooden interlocking system, so there are no screws that could add to interference.</li>
+  <li><strong>Antenna below the box.</strong> A bottom-projecting housing carries the copper-wire antenna elements, set at 45° to each other.</li>
+</ul>
+<p>These are design responses to KAOS-1. They haven't yet been tested against it, so I'm not claiming reduced interference.</p>
+</div>
+
+<div class="grid-2"><figure><img src="assets/img/kaos-cad-exterior.jpg" alt="CAD of the original KAOS-2 enclosure exterior with interlocking walls and a vent" class="contain" loading="lazy"><figcaption>Original enclosure CAD: interlocking walls, panels and vent.</figcaption></figure><figure><img src="assets/img/kaos-cad-underside.jpg" alt="CAD view of the enclosure underside showing the antenna housing" class="contain" loading="lazy"><figcaption>Underside, showing the bottom antenna housing.</figcaption></figure></div>
+
+<div class="prose">
+<h2 id="build">Build</h2>
+<p>The panels were laser-cut from 1/4-inch Sande plywood in the TI lab. I assembled the box with wood glue and used epoxy to fill gaps.</p>
+</div>
+
+<figure class="figure"><img src="assets/img/kaos-cad-internal.jpg" alt="CAD of the enclosure interior showing board and speaker placement" loading="lazy"><figcaption>Original internal packaging CAD: board, speaker and mount placement.</figcaption></figure>
+
+<div class="prose">
+<h2 id="redesign">Review and redesign</h2>
+<p>Reviewing the first build showed what needed to change:</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Found in the first enclosure</th><th>Replacement design</th></tr></thead>
+<tbody>
+<tr><td>Insulation lined both inside and outside, probably more than needed</td><td>Revised insulation approach</td></tr>
+<tr><td>Vent openings had no fans</td><td>Reworked vents</td></tr>
+<tr><td>No proper camera, battery or SPOT tracker mounts</td><td>Dedicated mounting for all components</td></tr>
+<tr><td>No defined way to secure the top panel</td><td>Top-panel retention</td></tr>
+</tbody></table></div>
+<p>The replacement enclosure is close to finished in CAD. It hasn't been built or tested, so these are design changes rather than proven fixes.</p>
+
+<h2 id="status">Status</h2>
+<ul class="clean">
+  <li>Original enclosure fully built.</li>
+  <li>Thermal test being designed, with the original enclosure as the test article to find how much insulation is needed. It has not run yet.</li>
+  <li>Replacement enclosure nearly complete in CAD.</li>
+  <li>KAOS-2 has not flown yet.</li>
+</ul>
+<p class="credits">Photos and CAD: Knights Satellite Club team, used with permission.</p>
+</div>
+
+<nav class="next-prev"><a href="tsat-2a.html">← TSat-2A</a><a href="kleo-1.html">Next: KLEO-1 →</a></nav>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Martin Fernandez-Stoll · Aerospace Engineering, University of Central Florida</span>
+    <span><a href="mailto:martinfernandezstoll@gmail.com">martinfernandezstoll@gmail.com</a> · <a href="https://www.linkedin.com/in/martinfernandezstoll" rel="noopener">LinkedIn</a> · <a href="assets/Martin_Fernandez-Stoll_Resume.pdf">Résumé</a></span>
+  </div>
+</footer>
+</body>
+</html>
